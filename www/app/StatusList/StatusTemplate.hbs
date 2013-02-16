@@ -1,0 +1,12 @@
+<table class="StatusList">
+  <thead>
+    <th>Title</th>
+    <th>Status</th>
+  </thead>
+  {{#each items}}
+    <tr>
+      <td>{{title}}</td>
+      <td class="{{color}}">{{status}}</td>
+    </tr>
+  {{/each}}  
+</table>

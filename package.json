@@ -1,0 +1,29 @@
+{
+  "name": "new-application",
+  "description": "",
+  "version": "0.0.1",
+  "author": "",
+  "dependencies": {},
+  "amd": {
+    "baseUrl": "www/lib"
+  },
+  "volo": {
+    "dependencies": {
+      "require": "github:jrburke/requirejs/2.1.4",
+      "zest": "github:zestjs/zest/master",
+      "require-less": "github:guybedford/require-less/master",
+      "jquery": "github:jquery/jquery/1.9.0",
+      "require-is": "github:guybedford/require-is/master",
+      "selector": "github:guybedford/selector/master",
+      "json2": "github:douglascrockford/JSON-js/master",
+      "json": "github:guybedford/json/master",
+      "require-inline": "github:guybedford/require-inline/master",
+      "require-css": "github:guybedford/require-css/master",
+      "zoe": "https://raw.github.com/zestjs/zoe/master/zoe.js",
+      "coffee-script": "github:jashkenas/coffee-script/1.4.0",
+      "require-coffee": "github:guybedford/require-coffee/master",
+      "Handlebars": "https://raw.github.com/SlexAxton/require-handlebars-plugin/master/Handlebars.js",
+      "require-handlebars-plugin": "github:SlexAxton/require-handlebars-plugin/master"
+    }
+  }
+}
