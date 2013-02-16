@@ -1,6 +1,13 @@
 ZestJS Single Page App Template
 ===
 
+TO USE:
+
+```
+  npm install volo -g
+  volo create appname guybedford/statuslist 
+```
+
 From the ZestJS Quick Start at http://zestjs.org/
 
 Install

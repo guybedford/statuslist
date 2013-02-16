@@ -8,10 +8,6 @@ define ['zest', 'cs!app/StatusModel', 'cs!app/StatusList/StatusList'], ($z, Stat
   StatusModel.load ->
     render()
 
-    StatusModel.add.on ->
-      $z.dispose(document.body.childNodes)
-      render()
-
-    StatusModel.change.on ->
+    StatusModel.update.on ->
       $z.dispose(document.body.childNodes)
       render()

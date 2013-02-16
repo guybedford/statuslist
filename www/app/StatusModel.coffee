@@ -18,14 +18,20 @@ define ['zoe'], (zoe) ->
 
 
   # triggers with dataChange(itemIndex, 'status', 'newValue')
-  change: zoe.fn([(index, property, value) ->
+  change: (index, property, value) ->
     @items[index][property] = value
-  ])
+    @update()
 
-  add: zoe.fn([(obj) ->
+  add: (obj) ->
     @items.push obj
-  ])
+    @update()
 
+  update: zoe.fn()
 
+  remove: (title) ->
+    for item, index in @items
+      if item.title == title
+        @items.splice index, 1
+        break
 
-
+    @update()
